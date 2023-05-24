@@ -54,7 +54,7 @@ const toggleCartMenu = () => {
 const asideCartContainer = document.querySelector('#shoppingCarContainer');
 menuCarIcon.addEventListener('click', toggleCartMenu);
 
-/** Product Detail Functionality */
+/** Product Detail Open Button Functionality */
 const openProductDetailAside = () => {
 	asideCartContainer.classList.add('inactive');
 
@@ -63,7 +63,7 @@ const openProductDetailAside = () => {
 
 const productDetailAside = document.querySelector('#productDetail');
 
-/** Products Functionality */
+/** Products Details Close Button  Functionality */
 const closeProductDetailAside = () => {
 	productDetailAside.classList.add('inactive');
 };
@@ -71,7 +71,7 @@ const closeProductDetailAside = () => {
 const productDetailClose = document.querySelector('.product-detail-close');
 productDetailClose.addEventListener('click', closeProductDetailAside);
 
-/** Products Functionality */
+/** Products List Functionality */
 const cardsContainer = document.querySelector('.cards-container');
 
 const productList = [];
