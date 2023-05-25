@@ -28,6 +28,7 @@ nav {
 /** NavBar **/
 .menu {
     display: none;
+    cursor: pointer;
 }
 
 .logo {
@@ -46,6 +47,8 @@ nav {
 
 .navbar-left {
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .navbar-left ul {
@@ -188,9 +191,9 @@ aside {
     background-color: var(--white);
 }
 
-/** Shopping Cart **/
+/** Shopping Cart Container **/
 #shoppingCartContainer {
-    padding: 0 24px;
+    padding: 15px 24px;
 }
 
 .title-container {
@@ -200,6 +203,7 @@ aside {
 .title-container img {
     transform: rotate(180deg);
     margin-right: 14px;
+    cursor: pointer;
 }
 
 .title {
@@ -252,11 +256,15 @@ aside {
     object-fit: cover;
 }
 
-.shopping-cart p:nth-child(2) {
+.cart-item-remove {
+    cursor: pointer;
+}
+
+.shopping-cart p.cart-item-name {
     color: var(--very-light-pink);
 }
 
-.shopping-cart p:nth-child(3) {
+.shopping-cart p.cart-item-price {
     font-size: var(--md);
     font-weight: bold;
 }
@@ -271,6 +279,12 @@ aside {
     font-size: var(--md);
     font-weight: bold;
     height: 50px;
+}
+
+.primary-button a,
+.primary-button a:visited {
+    text-decoration: none;
+    color: inherit;
 }
 
 /** Product List **/
@@ -291,6 +305,7 @@ aside {
     height: 240px;
     border-radius: 20px;
     object-fit: cover;
+    cursor: pointer;
 }
 
 .product-card .product-info {
@@ -307,6 +322,7 @@ aside {
 .product-card .product-info figure img {
     width: 35px;
     height: 35px;
+    cursor: pointer;
 }
 
 .product-card .product-info div p:nth-child(1) {
@@ -323,8 +339,11 @@ aside {
     color: var(--very-light-pink);
 }
 
-
 /** Product Detail **/
+#productDetail {
+    padding: 0 10px 5px;
+}
+
 .product-detail-close {
     background: var(--white);
     width: 14px;
