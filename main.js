@@ -198,10 +198,12 @@ const openProductDetailAside = (e) => {
 	productDetailDivClose.appendChild(productDetailImgClose);
 	productDetail.appendChild(productDetailImg);
 	productDetail.appendChild(productDetailInfo);
+
 	productDetailInfo.appendChild(productDetailName);
 	productDetailInfo.appendChild(productDetailPrice);
 	productDetailInfo.appendChild(productDetailDescription);
 	productDetailInfo.appendChild(productDetailButton);
+
 	productDetailButton.appendChild(productDetailBtnImg);
 	productDetailButton.appendChild(productDetailBtnName);
 };
